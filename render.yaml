@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: qachat-app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: ./start.sh
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: SOME_ENV_VAR
+        value: SOME_VALUE
