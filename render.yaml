@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: qachat-app
+    name: app-app
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: ./start.sh
